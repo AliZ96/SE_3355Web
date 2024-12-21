@@ -1,0 +1,51 @@
+{
+    "Televizyon": [
+        {
+            "id": 1,
+            "name": "Samsung Smart TV",
+            "description": "4K UHD HDR Smart TV.",
+            "price": 15000,
+            "city": "İstanbul",
+            "image_url": "https://via.placeholder.com/250?text=Samsung+Smart+TV"
+        },
+        {
+            "id": 2,
+            "name": "LG OLED TV",
+            "description": "OLED ekran, üstün görüntü kalitesi.",
+            "price": 20000,
+            "city": "Ankara",
+            "image_url": "https://via.placeholder.com/250?text=LG+OLED+TV"
+        }
+    ],
+    "Tablet": [
+        {
+            "id": 3,
+            "name": "iPad Pro",
+            "description": "11 inç, güçlü performans.",
+            "price": 18000,
+            "city": "İzmir",
+            "image_url": "https://via.placeholder.com/250?text=iPad+Pro"
+        }
+    ],
+    "Laptop": [
+        {
+            "id": 4,
+            "name": "MacBook Air",
+            "description": "M1 çip ile üstün performans.",
+            "price": 25000,
+            "city": "Antalya",
+            "image_url": "https://via.placeholder.com/250?text=MacBook+Air"
+        }
+    ],
+    "Monitör": [],
+    "Kulaklık": [
+        {
+            "id": 5,
+            "name": "Sony WH-1000XM4",
+            "description": "Gürültü önleyici kablosuz kulaklık.",
+            "price": 5000,
+            "city": "İstanbul",
+            "image_url": "https://via.placeholder.com/250?text=Sony+WH-1000XM4"
+        }
+    ]
+}

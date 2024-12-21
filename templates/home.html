@@ -1,0 +1,20 @@
+{% extends "base.html" %}
+{% block content %}
+<h1 class="text-center">Teknolojik Ürünler Vitrini</h1>
+<div class="row">
+    {% for product in featured_products %}
+    <div class="col-md-3">
+        <div class="card">
+            <img src="{{ product.image_url }}" class="card-img-top" alt="{{ product.name }}">
+            <div class="card-body">
+                <h5 class="card-title">{{ product.name }}</h5>
+                <p>{{ product.description }}</p>
+                <p><strong>{{ product.price }} TL</strong></p>
+                <p><em>{{ product.city }}</em></p>
+                <a href="/product/{{ product.id }}" class="btn btn-primary">Detay</a>
+            </div>
+        </div>
+    </div>
+    {% endfor %}
+</div>
+{% endblock %}

@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+{% block content %}
+<h2>Arama Sonuçları</h2>
+{% if search_results %}
+<div class="row">
+    {% for product in search_results %}
+    <div class="col-md-3">
+        <div class="card">
+            <img src="{{ product.image_url }}" class="card-img-top" alt="{{ product.name }}">
+            <div class="card-body">
+                <h5 class="card-title">{{ product.name }}</h5>
+                <p>{{ product.price }} TL</p>
+                <p><em>{{ product.city }}</em></p>
+                <a href="/product/{{ product.id }}" class="btn btn-primary">Detay</a>
+            </div>
+        </div>
+    </div>
+    {% endfor %}
+</div>
+{% else %}
+<p>Sonuç bulunamadı.</p>
+{% endif %}
+{% endblock %}
